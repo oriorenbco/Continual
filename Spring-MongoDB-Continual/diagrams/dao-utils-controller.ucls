@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.3" icons="true" automaticImage="JPEG" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true" 
+  router="FAN">  
+  <interface id="1" language="java" name="com.lorin.continual.dao.CalibratedDataDAO" project="spring-boot-mongodb" 
+    file="/spring-boot-mongodb/src/main/java/com/lorin/continual/dao/CalibratedDataDAO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="350" x="420" y="14"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" language="java" name="com.lorin.continual.dao.CalibratedDataDAOImpl" project="spring-boot-mongodb" 
+    file="/spring-boot-mongodb/src/main/java/com/lorin/continual/dao/CalibratedDataDAOImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="351" x="13" y="13"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="com.lorin.continual.dao.NetworkTrafficDAO" project="spring-boot-mongodb" 
+    file="/spring-boot-mongodb/src/main/java/com/lorin/continual/dao/NetworkTrafficDAO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="205" y="672"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="4" language="java" name="com.lorin.continual.dao.NetworkTrafficDAOImpl" project="spring-boot-mongodb" 
+    file="/spring-boot-mongodb/src/main/java/com/lorin/continual/dao/NetworkTrafficDAOImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="938" y="640"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.lorin.continual.utils.DataAnalyser" project="spring-boot-mongodb" 
+    file="/spring-boot-mongodb/src/main/java/com/lorin/continual/utils/DataAnalyser.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="586" y="276"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.lorin.continual.utils.DataCalibrator" project="spring-boot-mongodb" 
+    file="/spring-boot-mongodb/src/main/java/com/lorin/continual/utils/DataCalibrator.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="142" y="361"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.lorin.continual.utils.NetworkTrafficDataGenerator" 
+    project="spring-boot-mongodb" 
+    file="/spring-boot-mongodb/src/main/java/com/lorin/continual/utils/NetworkTrafficDataGenerator.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="957" y="220"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.lorin.continual.utils.NetworkTrafficDataGenerator.AddTask" 
+    project="spring-boot-mongodb" 
+    file="/spring-boot-mongodb/src/main/java/com/lorin/continual/utils/NetworkTrafficDataGenerator.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="600" y="571"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="9">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="10" name="networkTrafficEntityDAO"/>      
+      <multiplicity id="11" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="12">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="13" name="calibratedDataDAO">        
+        <position height="18" width="100" x="483" y="161"/>      
+      </attribute>      
+      <multiplicity id="14" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="15">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <association id="16">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="17" name="calibratedDataDAO">        
+        <position height="18" width="100" x="371" y="152"/>      
+      </attribute>      
+      <multiplicity id="18" minimum="0" maximum="1">        
+        <position height="16" width="23" x="411" y="169"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="19">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="20" name="networkTrafficEntityDAO"/>      
+      <multiplicity id="21" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="22">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="23" name="dataAnalyser">        
+        <position height="18" width="73" x="703" y="225"/>      
+      </attribute>      
+      <multiplicity id="24" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="25">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <association id="26">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="27" name="networkTrafficEntityDAO">        
+        <position height="18" width="129" x="404" y="527"/>      
+      </attribute>      
+      <multiplicity id="28" minimum="0" maximum="1">        
+        <position height="16" width="23" x="442" y="557"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="29">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="8"/>  
+  </nesting>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.3" icons="true" automaticImage="JPEG" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true" 
+  router="FAN">  
+  <class id="1" language="java" name="com.lorin.continual.model.CalibratedData" project="spring-boot-mongodb" 
+    file="/spring-boot-mongodb/src/main/java/com/lorin/continual/model/CalibratedData.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="118" y="141"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="2" language="java" name="com.lorin.continual.model.CalibratedData.Event" 
+    project="spring-boot-mongodb" 
+    file="/spring-boot-mongodb/src/main/java/com/lorin/continual/model/CalibratedData.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="109" y="504"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <interface id="3" language="java" name="com.lorin.continual.model.Constants" project="spring-boot-mongodb" 
+    file="/spring-boot-mongodb/src/main/java/com/lorin/continual/model/Constants.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="530" y="486"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="4" language="java" name="com.lorin.continual.model.NetworkTrafficEntity" project="spring-boot-mongodb" 
+    file="/spring-boot-mongodb/src/main/java/com/lorin/continual/model/NetworkTrafficEntity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="319" y="154"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="5" language="java" name="com.lorin.continual.model.NetworkTrafficEntity.Type" 
+    project="spring-boot-mongodb" 
+    file="/spring-boot-mongodb/src/main/java/com/lorin/continual/model/NetworkTrafficEntity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="310" y="506"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="6" language="java" name="com.lorin.continual.model.RankDefinition" project="spring-boot-mongodb" 
+    file="/spring-boot-mongodb/src/main/java/com/lorin/continual/model/RankDefinition.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="613" y="123"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.lorin.continual.model.RankInterval" project="spring-boot-mongodb" 
+    file="/spring-boot-mongodb/src/main/java/com/lorin/continual/model/RankInterval.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="727" y="502"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <nesting id="8">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </nesting>  
+  <association id="9">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="10" name="_instance">        
+        <position height="0" width="0" x="-10" y="1"/>      
+      </attribute>      
+      <multiplicity id="11" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-10" y="1"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="12">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="13" name="ranking">        
+        <position height="0" width="0" x="-18" y="-1"/>      
+      </attribute>      
+      <multiplicity id="14" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-18" y="-1"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="15">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </nesting>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
