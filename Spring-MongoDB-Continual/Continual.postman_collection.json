@@ -1,0 +1,296 @@
+{
+	"info": {
+		"_postman_id": "f235fb42-cca1-4b2b-88b3-30033ea5d972",
+		"name": "Continual",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"road\" : 11,\r\n  \"type\": \"CALL\",\r\n  \"failed\": true\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8102/traffic/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"traffic",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"roads\" : 10,\r\n  \"days\": 7,\r\n  \"documents\":1000,\r\n  \"drilldown\":true\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8102/traffic/generate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"traffic",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clear",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"drilldown\":true,\r\n  \"roads\" : 10,\r\n  \"days\": 7,\r\n  \"documents\":1000\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8102/traffic/clear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"traffic",
+						"clear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calibrate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8102/traffic/calibrate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"traffic",
+						"calibrate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setRankDefinition",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ranks\":\"86,50,68,10\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8102/traffic/setRankDefinition",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"traffic",
+						"setRankDefinition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "resetRankDefinition",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8102/traffic/resetRankDefinition",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"traffic",
+						"resetRankDefinition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getRankDefinition",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8102/traffic/getRankDefinition",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"traffic",
+						"getRankDefinition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rankRoad",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8102/traffic/rankRoad/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"traffic",
+						"rankRoad",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calibratedDataForRoad",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8102/traffic/calibratedDataForRoad/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"traffic",
+						"calibratedDataForRoad",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
