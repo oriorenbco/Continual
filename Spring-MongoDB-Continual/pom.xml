@@ -9,7 +9,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-boot-mongodb</name>
+	<name>spring-boot-mongodb-continual-github</name>
 	<description>Spring Boot MongoDB Continual project</description>
 
 	<parent>
